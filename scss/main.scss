@@ -10,8 +10,9 @@
 #      INDICE
 
 #   	1. General
-		2. Colors
-
+#     2. Colors
+#     3. Utility Clases
+#     4. Forms
 */
 
 
@@ -19,14 +20,26 @@
 
 /*
 ==========================================
-#                General
+#                1. General
 ==========================================
 
 */
+
+/* Typography */
+
+body {
+  font-size: 14px;
+}
+
 h1 {
   color: #4a4a4a;
   text-align: center;
   margin: 10px;
+}
+
+/* Inputs */
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+  color: black;
 }
 
 .image {
@@ -40,18 +53,82 @@ h1 {
 
 
 
+
 /*
 ==========================================
-#                General
+#                2. Colors
 ==========================================
 */
 
 $light:                           #fff !default;
 $stable:                          #f8f8f8 !default;
-$positive:                        #008080 !default;
+$positive:                        #66CDAA !default;
 $calm:                            #11c1f3 !default;
 $balanced:                        #33cd5f !default;
 $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
+
+/*
+==========================================
+#                3. Utility Clases
+==========================================
+*/
+
+
+
+/*
+==========================================
+#                4. Forms
+==========================================
+*/
+
+.login, 
+.register,
+.forgot {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  padding: 10%;
+
+  .ion-steam{
+    font-size: 6em;
+    padding-bottom: 5%;
+    &:before {
+      padding: 10% 0%;
+    }
+  }
+
+  .item-input{
+    background: rgba(250,250,250, 0.85);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+    input {
+      margin-left: 40px;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+     color: #2a2a2a;;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: #2a2a2a;;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: #2a2a2a;;  
+  }
+
+  :-ms-input-placeholder {  
+     color: #2a2a2a;;  
+  }
+
+  .button{
+    border-radius: 40px;
+  }
+}

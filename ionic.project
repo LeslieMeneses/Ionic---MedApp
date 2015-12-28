@@ -1,6 +1,6 @@
 {
   "name": "firebaseUser",
-  "app_id": "",
+  "app_id": "2370dd0e",
   "gulpStartupTasks": [
     "sass",
     "watch"

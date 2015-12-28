@@ -1,12 +1,12 @@
 <ion-view view-title="Forgot Password">
-  <ion-content class="padding-top">
+  <ion-content class="padding-top forgot">
     <div class="text-center padding">
-      <i class="icon ion-ios-infinite larger positive"></i>
+      <i class="icon ion-ios-glasses-outline larger positive"></i>
     </div>
     <form name="forgotForm" novalidate ng-submit="forgotForm.$valid && resetpassword(user)">
    <div class="list">
-      <label class="item item-input item-floating-label" ng-class="{ 'has-error' : forgotForm.txtemail.$invalid && forgotForm.$submitted }">
-        <span class="input-label">Email</span>
+      <label class="item item-input item-icon-left item-floating-label" ng-class="{ 'has-error' : forgotForm.txtemail.$invalid && forgotForm.$submitted }">
+        <i class="icon ion-ios-email-outline positive"></i>
         <input name="txtemail" ng-model="user.email" placeholder="Email" type="email"
         ng-minlength="5"
         ng-maxlength="30"

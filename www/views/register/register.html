@@ -1,13 +1,13 @@
 <ion-view view-title="Register">
-  <ion-content class="padding-top">
+  <ion-content class="padding-top register">
     <div class="text-center padding-top">
-      <i class="icon ion-android-person-add larger positive"></i>
+      <i class="icon ion-ios-plus positive"></i>
     </div>
     <form name="registerForm" novalidate ng-submit="registerForm.$valid && register(user)"
     ng-class="{ 'has-error' : registerForm.txtemail.$invalid && registerForm.$submitted }">
     <div class="list">
-        <label class="item item-input item-floating-label">
-          <span class="input-label">Email</span>
+        <label class="item item-input item-icon-left item-floating-label">
+          <i class="icon ion-ios-email-outline positive"></i>
         <input name="txtemail" type="email" ng-model="user.email" placeholder="Email"
         ng-minlength="5"
         ng-maxlength="30"
@@ -18,8 +18,8 @@
         <div class="form-error" ng-message="email">This field is must be an email.</div>
         <div class="form-error" ng-message="maxlength">Ops, parece ser muy grande el correo.</div>
       </div>
-        <label class="item item-input item-floating-label" ng-class="{ 'has-error-lr' : registerForm.txtpassword.$invalid  && registerForm.$submitted}">
-        <span class="input-label">Password</span>
+        <label class="item item-input item-icon-left item-floating-label" ng-class="{ 'has-error-lr' : registerForm.txtpassword.$invalid  && registerForm.$submitted}">
+        <i class="icon ion-ios-locked-outline positive"></i>
         <input name="txtpassword" type="password" ng-model="user.password" placeholder="Password"
         ng-minlength="5"
         ng-maxlength="25"

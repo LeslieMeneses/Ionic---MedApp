@@ -1,0 +1,9 @@
+.register {
+	.ion-ios-plus{
+		font-size: 6em;
+		padding-bottom: 5%;
+		&:before {
+			padding: 10% 0%;
+		}
+	}
+}
