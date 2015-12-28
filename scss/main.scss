@@ -1,0 +1,57 @@
+/**
+
+#  CopyRight:       Catalina Meneses
+#  Date:            12-2015
+
+*/
+
+/*
+
+#      INDICE
+
+#   	1. General
+		2. Colors
+
+*/
+
+
+
+
+/*
+==========================================
+#                General
+==========================================
+
+*/
+h1 {
+  color: #4a4a4a;
+  text-align: center;
+  margin: 10px;
+}
+
+.image {
+  text-align: center;
+  margin: 30px;
+  img {
+    width: 50%;
+    border-radius: 50%;
+  }
+}
+
+
+
+/*
+==========================================
+#                General
+==========================================
+*/
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #008080 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
